@@ -57,6 +57,68 @@ management.
 ➢ Stemming : Employed stemming as a normalization technique.
 ```
 
+## Testcases
+```shell
+$ do_quering("julius and caesar")
+```
+> query in process_query ['call', 'or', 'not', '(', 'julius', 'and', 'caesar', ')']
+<br/>edited_query_words after edit distance:  ['call', 'or', 'not', '(', 'julius', 'and', 'caesar', ')']
+<br/>query : ['call', 'or', 'not', '(', 'julius', 'and', 'caesar', ')']
+<br/>call
+<br/>julius
+<br/>caesar
+<br/>Final result :  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+<br/>['henry-iv-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-2_TXT_FolgerShakespeare.txt', 'henry-iv-part-2_TXT_FolgerShakespeare.txt', 'as-you-like-it_TXT_FolgerShakespeare.txt', 'henry-vi-part-3_TXT_FolgerShakespeare.txt', 'alls-well-that-ends-well_TXT_FolgerShakespeare.txt', 'coriolanus_TXT_FolgerShakespeare.txt', 'much-ado-about-nothing_TXT_FolgerShakespeare.txt', 'the-comedy-of-errors_TXT_FolgerShakespeare.txt', 'henry-viii_TXT_FolgerShakespeare.txt', 'cymbeline_TXT_FolgerShakespeare.txt', 'king-john_TXT_FolgerShakespeare.txt', 'julius-caesar_TXT_FolgerShakespeare.txt', 'measure-for-measure_TXT_FolgerShakespeare.txt', 'lucrece_TXT_FolgerShakespeare.txt', 'loves-labors-lost_TXT_FolgerShakespeare.txt', 'king-lear_TXT_FolgerShakespeare.txt', 'macbeth_TXT_FolgerShakespeare.txt', 'the-merchant-of-venice_TXT_FolgerShakespeare.txt', 'othello_TXT_FolgerShakespeare.txt', 'a-midsummer-nights-dream_TXT_FolgerShakespeare.txt', 'richard-iii_TXT_FolgerShakespeare.txt', 'romeo-and-juliet_TXT_FolgerShakespeare.txt', 'pericles_TXT_FolgerShakespeare.txt', 'richard-ii_TXT_FolgerShakespeare.txt', 'the-phoenix-and-turtle_TXT_FolgerShakespeare.txt', 'the-taming-of-the-shrew_TXT_FolgerShakespeare.txt', 'shakespeares-sonnets_TXT_FolgerShakespeare.txt', 'the-two-gentlemen-of-verona_TXT_FolgerShakespeare.txt', 'twelfth-night_TXT_FolgerShakespeare.txt', 'the-two-noble-kinsmen_TXT_FolgerShakespeare.txt', 'timon-of-athens_TXT_FolgerShakespeare.txt', 'the-tempest_TXT_FolgerShakespeare.txt', 'the-winters-tale_TXT_FolgerShakespeare.txt', 'titus-andronicus_TXT_FolgerShakespeare.txt', 'venus-and-adonis_TXT_FolgerShakespeare.txt', 'the-merry-wives-of-windsor_TXT_FolgerShakespeare.txt', 'hamlet_TXT_FolgerShakespeare.txt', 'henry-v_TXT_FolgerShakespeare.txt', 'antony-and-cleopatra_TXT_FolgerShakespeare.txt', 'troilus-and-cressida_TXT_FolgerShakespeare.txt']
+
+```shell
+$ do_quering("call or not (julius and caesar)")
+```
+> query in process_query ['call', 'or', 'not', '(', 'julius', 'and', 'caesar', ')']
+<br/>edited_query_words after edit distance:  ['call', 'or', 'not', '(', 'julius', 'and', 'caesar', ')']
+<br/>query : ['call', 'or', 'not', '(', 'julius', 'and', 'caesar', ')']
+<br/>call
+<br/>julius
+<br/>caesar
+<br/>Final result :  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+<br/>['henry-iv-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-2_TXT_FolgerShakespeare.txt', 'henry-iv-part-2_TXT_FolgerShakespeare.txt', 'as-you-like-it_TXT_FolgerShakespeare.txt', 'henry-vi-part-3_TXT_FolgerShakespeare.txt', 'alls-well-that-ends-well_TXT_FolgerShakespeare.txt', 'coriolanus_TXT_FolgerShakespeare.txt', 'much-ado-about-nothing_TXT_FolgerShakespeare.txt', 'the-comedy-of-errors_TXT_FolgerShakespeare.txt', 'henry-viii_TXT_FolgerShakespeare.txt', 'cymbeline_TXT_FolgerShakespeare.txt', 'king-john_TXT_FolgerShakespeare.txt', 'julius-caesar_TXT_FolgerShakespeare.txt', 'measure-for-measure_TXT_FolgerShakespeare.txt', 'lucrece_TXT_FolgerShakespeare.txt', 'loves-labors-lost_TXT_FolgerShakespeare.txt', 'king-lear_TXT_FolgerShakespeare.txt', 'macbeth_TXT_FolgerShakespeare.txt', 'the-merchant-of-venice_TXT_FolgerShakespeare.txt', 'othello_TXT_FolgerShakespeare.txt', 'a-midsummer-nights-dream_TXT_FolgerShakespeare.txt', 'richard-iii_TXT_FolgerShakespeare.txt', 'romeo-and-juliet_TXT_FolgerShakespeare.txt', 'pericles_TXT_FolgerShakespeare.txt', 'richard-ii_TXT_FolgerShakespeare.txt', 'the-phoenix-and-turtle_TXT_FolgerShakespeare.txt', 'the-taming-of-the-shrew_TXT_FolgerShakespeare.txt', 'shakespeares-sonnets_TXT_FolgerShakespeare.txt', 'the-two-gentlemen-of-verona_TXT_FolgerShakespeare.txt', 'twelfth-night_TXT_FolgerShakespeare.txt', 'the-two-noble-kinsmen_TXT_FolgerShakespeare.txt', 'timon-of-athens_TXT_FolgerShakespeare.txt', 'the-tempest_TXT_FolgerShakespeare.txt', 'the-winters-tale_TXT_FolgerShakespeare.txt', 'titus-andronicus_TXT_FolgerShakespeare.txt', 'venus-and-adonis_TXT_FolgerShakespeare.txt', 'the-merry-wives-of-windsor_TXT_FolgerShakespeare.txt', 'hamlet_TXT_FolgerShakespeare.txt', 'henry-v_TXT_FolgerShakespeare.txt', 'antony-and-cleopatra_TXT_FolgerShakespeare.txt', 'troilus-and-cressida_TXT_FolgerShakespeare.txt']
+
+```shell
+$ do_quering("Bru*s and calpurnia")
+```
+> query in process_query ['bru*s', 'and', 'calpurnia']
+<br/>edited_query_words after edit distance:  ['bru*s', 'and', 'calphurnia']
+<br/>query : ['bru*s', 'and', 'calphurnia']
+<br/>unique available :> zeroes_and_ones for  bruises  :> [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+<br/>unique available :> zeroes_and_ones for  brushes  :> [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+<br/>unique available :> zeroes_and_ones for  brutus  :> [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0]
+<br/>unique available :> zeroes_and_ones for  brutuss  :> [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+<br/>result of OR of wildcard:  [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]
+<br/>calphurnia
+<br/>Final result :  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+<br/>['julius-caesar_TXT_FolgerShakespeare.txt']
+
+```shell
+$ do_quering("NOT fear AND NOT SISTER")
+```
+> query in process_query ['not', 'fear', 'and', 'not', 'sister']
+<br/>edited_query_words after edit distance:  ['not', 'fear', 'and', 'not', 'sister']
+<br/>query : ['not', 'fear', 'and', 'not', 'sister']
+<br/>fear
+<br/>sister
+<br/>Final result :  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+<br/>['the-phoenix-and-turtle_TXT_FolgerShakespeare.txt']
+<br/>1
+
+```shell
+$ do_quering("not in")
+```
+> query in process_query ['not', 'in']
+<br/>edited_query_words after edit distance:  ['not', 'bin']
+<br/>query : ['not', 'bin']
+<br/>bin
+<br/>Final result :  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+<br/>['henry-iv-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-2_TXT_FolgerShakespeare.txt', 'henry-iv-part-2_TXT_FolgerShakespeare.txt', 'as-you-like-it_TXT_FolgerShakespeare.txt', 'henry-vi-part-3_TXT_FolgerShakespeare.txt', 'alls-well-that-ends-well_TXT_FolgerShakespeare.txt', 'coriolanus_TXT_FolgerShakespeare.txt', 'much-ado-about-nothing_TXT_FolgerShakespeare.txt', 'the-comedy-of-errors_TXT_FolgerShakespeare.txt', 'henry-viii_TXT_FolgerShakespeare.txt', 'cymbeline_TXT_FolgerShakespeare.txt', 'king-john_TXT_FolgerShakespeare.txt', 'julius-caesar_TXT_FolgerShakespeare.txt', 'measure-for-measure_TXT_FolgerShakespeare.txt', 'lucrece_TXT_FolgerShakespeare.txt', 'loves-labors-lost_TXT_FolgerShakespeare.txt', 'macbeth_TXT_FolgerShakespeare.txt', 'the-merchant-of-venice_TXT_FolgerShakespeare.txt', 'othello_TXT_FolgerShakespeare.txt', 'a-midsummer-nights-dream_TXT_FolgerShakespeare.txt', 'richard-iii_TXT_FolgerShakespeare.txt', 'romeo-and-juliet_TXT_FolgerShakespeare.txt', 'pericles_TXT_FolgerShakespeare.txt', 'richard-ii_TXT_FolgerShakespeare.txt', 'the-phoenix-and-turtle_TXT_FolgerShakespeare.txt', 'the-taming-of-the-shrew_TXT_FolgerShakespeare.txt', 'shakespeares-sonnets_TXT_FolgerShakespeare.txt', 'the-two-gentlemen-of-verona_TXT_FolgerShakespeare.txt', 'twelfth-night_TXT_FolgerShakespeare.txt', 'the-two-noble-kinsmen_TXT_FolgerShakespeare.txt', 'timon-of-athens_TXT_FolgerShakespeare.txt', 'the-tempest_TXT_FolgerShakespeare.txt', 'the-winters-tale_TXT_FolgerShakespeare.txt', 'titus-andronicus_TXT_FolgerShakespeare.txt', 'venus-and-adonis_TXT_FolgerShakespeare.txt', 'the-merry-wives-of-windsor_TXT_FolgerShakespeare.txt', 'hamlet_TXT_FolgerShakespeare.txt', 'henry-v_TXT_FolgerShakespeare.txt', 'antony-and-cleopatra_TXT_FolgerShakespeare.txt', 'troilus-and-cressida_TXT_FolgerShakespeare.txt']
+<br/>41
 
 
 # Observation and Design Choices
