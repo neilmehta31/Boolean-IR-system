@@ -1,16 +1,13 @@
 # Boolean-IR-system
 Boolean Information Retrieval system with complex boolean queries [and, or, not,  ')' , '('  ] .
 
-
-## Information Retrieval Assignment 1
-
 ## Boolean Information Retrieval
 
 | Name                                       |   ID Number   |
 | :----------------------------------------- | :-----------: |
-| [Atishay Jain](https://github.com/adeecc) | 2019A7PS0106H |
-| [Neil Mehta](https://github.com/CyberKnight1803)        | 2019AAPS0177H |
-| [Fenil Bardoliya](https://github.com/vedansh-srivastava)  | 2019A7PS0152H |
+| [Atishay Jain](https://github.com/AtishayJain11) | 2019A7PS0106H |
+| [Fenil Bardoliya](https://github.com/FB57)  | 2019A7PS0152H |
+| [Neil Mehta](https://github.com/neilmehta31)        | 2019AAPS0177H |
 
 # Problem Statement
 
